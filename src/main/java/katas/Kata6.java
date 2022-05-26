@@ -16,4 +16,10 @@ public class Kata6 {
 
         return "someUrl";
     }
+
+    public static void main(String[] args){
+
+        Kata4 kata4 = new Kata4();
+        System.out.println(kata4.execute());
+    }
 }
