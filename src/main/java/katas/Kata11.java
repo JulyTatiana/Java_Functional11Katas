@@ -9,13 +9,11 @@ import java.util.Map;
 
 /*
     Goal: Create a datastructure from the given data:
-
     This time we have 4 seperate arrays each containing lists, videos, boxarts, and bookmarks respectively.
     Each object has a parent id, indicating its parent.
     We want to build an array of list objects, each with a name and a videos array.
     The videos array will contain the video's id, title, bookmark time, and smallest boxart url.
     In other words we want to build the following structure:
-
     [
         {
             "name": "New Releases",
@@ -52,7 +50,6 @@ import java.util.Map;
             ]
         }
     ]
-
     DataSource: DataUtil.getLists(), DataUtil.getVideos(), DataUtil.getBoxArts(), DataUtil.getBookmarkList()
     Output: the given datastructure
 */
@@ -67,4 +64,10 @@ public class Kata11 {
                 ImmutableMap.of("id", 5, "title", "The Chamber", "time", 123, "boxart", "someUrl")
         )));
     }
+    public static void main(String[] args){
+
+        Kata11 kata11 = new Kata11();
+        System.out.println(kata11.execute());
+    }
+
 }
